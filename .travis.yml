@@ -1,4 +1,6 @@
 language: csharp
 solution: novelconvert.sln
 mono:
-        - latest
+        - lastest
+services:
+        - mysql
