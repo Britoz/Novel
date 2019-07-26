@@ -26,7 +26,7 @@ namespace novelconvert.Controllers
                 return RedirectToAction("/Home/Index/");
             }
 
-            
+            return RedirectToAction("/Home/Index/");
         }
         
         public ActionResult Upload(int id = 0)
