@@ -1,10 +1,6 @@
-1 language: csharp
-2 solution: novelconvert.sln
-3 install:
-        - nuget restore novelconvert.sln
-        - nuget install xunit.runners -Version 1.9.2 -OutputDirectory testrunner
-4 script:
-        - xbuild /p:Configuration=Release novelconvert.sln
-        - mono ./testrunner/xunit.runners.1.9.2/tools/xunit.console.clr4.exe 
-        
-
+language: csharp
+solution: novelconvert.sln
+mono:
+        - lastest
+services:
+        - mysql
